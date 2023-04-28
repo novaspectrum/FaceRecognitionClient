@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context=".CameraActivity"
+    tools:ignore="MergeRootFrame">
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/cameraView"
+        android:keepScreenOn="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cameraPictureSizeMinWidth="320"
+        app:cameraPictureSizeMinHeight="240"
+        app:cameraPictureSizeMaxWidth="1280"
+        app:cameraPictureSizeMaxHeight="720"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <edu.ita.honorio.facerecognitionclient.OverlayView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorOverlay"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <ImageView
+                    android:id="@+id/cameraCloseButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+                    android:tint="#EEFFFFFF"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/cameraCaptureButton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/capture_button"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <ImageView
+                    android:id="@+id/cameraSwitchButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_switch"
+                    android:tint="#EEFFFFFF"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

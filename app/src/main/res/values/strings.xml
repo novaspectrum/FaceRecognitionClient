@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">FaceRecognitionClient</string>
+    <string name="main_fragment_txt_title">Sistema de Reconocimiento Facial</string>
+    <string name="main_fragment_btn_enroll">Enrolar</string>
+    <string name="main_fragment_btn_recognize">Reconocer</string>
+    <string name="main_fragment_btn_settings">Ajustes</string>
+    <string name="main_activity_title_recognize">Reconociendo</string>
+    <string name="common_btn_ok">Aceptar</string>
+    <string name="common_btn_cancel">Cancelar</string>
+    <string name="common_title_error">Error</string>
+    <string name="common_title_attention">Atención</string>
+    <string name="common_title_error_camera">Error de la camara</string>
+    <string name="common_message_wait" tools:ignore="Typos">Espere un momento.</string>
+    <string name="common_message_error_bitmap_decode">Error al decodificar la imagen.</string>
+    <string name="camera_activity_message_error_capture">Error al generar el Bitmap.</string>
+    <string name="camera_activity_message_error_permissions">No se tienen los permisos para acceder a la camara.</string>
+    <string name="enroll_fragment_hint_nombre">Nombre</string>
+    <string name="enroll_fragment_hint_paterno">Apellido Paterno</string>
+    <string name="enroll_fragment_hint_materno">Apellido Materno</string>
+    <string name="enroll_fragment_hint_control">Número de Control</string>
+    <string name="enroll_fragment_error_nombre">Introduzca un Nombre válido!!!</string>
+    <string name="enroll_fragment_error_apellido">Introduzca un Apellido válido!!!</string>
+    <string name="enroll_fragment_error_control">Introduzca un Número de control válido!!!</string>
+    <string name="enroll_fragment_error_foto">Capture la foto del rostro del usuario.</string>
+    <string name="enroll_fragment_title_enroll">Enrolando</string>
+    <string name="recognize_fragment_message_error_response">Error al recuperar la respuesta.</string>
+    <string name="recognize_fragment_prefix_nomre">Nombre:</string>
+    <string name="recognize_fragment_prefix_paterno">Paterno:</string>
+    <string name="recognize_fragment_prefix_materno">Materno:</string>
+    <string name="recognize_fragment_prefix_control">No. Control:</string>
+    <string name="recognize_fragment_prefix_score">Score:</string>
+    <string name="settings_fragment_hint_ip">Dirección IP del servidor:</string>
+    <string name="settings_fragment_hint_port">Número de puerto del servidor:</string>
+    <string name="settings_fragment_error_ip">Introduzca una dirección IP válida!!!</string>
+    <string name="settings_fragment_error_port">Introduzca un número de puerto válido!!!</string>
+</resources>

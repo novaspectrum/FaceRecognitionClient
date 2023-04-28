@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "626961142887",
+    "firebase_url": "https://facerecognition-b6052.firebaseio.com",
+    "project_id": "facerecognition-b6052",
+    "storage_bucket": "facerecognition-b6052.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626961142887:android:e87eb1490a34bd0f",
+        "android_client_info": {
+          "package_name": "edu.ita.honorio.facerecognitionclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626961142887-mv9l47852vn2jh2gjisqeslaitth9mtr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPDeSJ24-pVYkuTDQ8b19umPq6EI1dBic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

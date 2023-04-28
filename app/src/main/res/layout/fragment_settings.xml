@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    android:background="@android:color/white"
+    tools:context=".SettingsFragment"
+    tools:ignore="Overdraw">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/settingsIPTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_flat"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/settingsPortTextInputLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="@string/settings_fragment_hint_ip"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/settingsPortTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_flat"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingsIPTextInputLayout">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/settings_fragment_hint_port"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/settingsCancelButton"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/common_btn_cancel"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/settingsOkButton"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:text="@string/common_btn_ok"
+            android:textColor="@android:color/white" />
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

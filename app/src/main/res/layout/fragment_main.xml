@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    android:background="@android:color/white"
+    tools:context=".MainFragment"
+    tools:ignore="ExtraText,Overdraw">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/mainTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="132dp"
+            android:text="@string/main_fragment_txt_title"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/mainEnrollButton"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/button_flat"
+            android:text="@string/main_fragment_btn_enroll"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainTitleTextView" />
+
+        <Button
+            android:id="@+id/mainRecognizeButton"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/button_flat"
+            android:text="@string/main_fragment_btn_recognize"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainEnrollButton" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/mainSettingsButton"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/main_fragment_btn_settings"
+            android:textColor="@android:color/white" />
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>
